@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <table border="1px">
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+        </tr>
+        <% for( student of students){%>
+            <tr>
+                <td><%=student.name%></td>
+                <td><%=student.age%></td>
+                <td><button><a href="/delete/<%=student._id%>">Delete</a></button></td>
+                <td><button><a href="/update/<%=student._id%>">update</a></button></td>
+            </tr>
+        
+        <%}%>
+    </table>
+</body>
+</html>
