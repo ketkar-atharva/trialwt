@@ -8,5 +8,6 @@ function process(data , op){
 function run(opp){
     let data=[2,4,6,8];
     let n=process(data,opp);
+
     document.getElementById("ans").innerText=n;
 }
