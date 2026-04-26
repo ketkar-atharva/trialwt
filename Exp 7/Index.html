@@ -5,9 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-
+<style>
+    img{
+        height:200px;
+        width: 300px;
+    }
+</style>
 <body>
-    <h2>Check the capital</h2><br>
+    <h2>Check the capital & Flag</h2><br>
     <select id="country" onchange="show()" >
         <option  value="" selected disabled>--Select country ---</option>
         <option value="India">India</option>
@@ -16,8 +21,8 @@
         <option value="USA">USA</option>
     </select>
     <p id="ans"></p>
-
-    <script src="captial.js"></script>
+    <img id="flag">
+    <script src="flag.js"></script>
 
 </body>
 </html>
