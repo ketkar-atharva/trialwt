@@ -8,9 +8,9 @@
 <body>
     <form method="post" action="/updatest/<%=edit._id%>?_method=PUT">
         <label>Name</label>
-        <input name="name" type="text" placeholder="Name">
+        <input name="name" type="text" placeholder="Name" value="<%=edit.name%>">
         <label> Age</label>
-        <input name="age" type="number" placeholder="Age">
+        <input name="age" type="number" placeholder="Age" value="<%= edit.age %>">
         <button>Edit</button>
     </form>
 </body>
